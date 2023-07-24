@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact-left-content {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .tab-item > p {
+    font-size: 1rem !important;
+    word-spacing: 0px !important;
+  }
+}
+
+@media screen and (min-width: 351px) and (max-width: 400px) {
+  .contact-left-content {
+    padding: 1.3em !important;
+  }
+
+  .contact-left-content > h2 {
+    font-size: 20px !important;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 351px) {
+  .home-container-right > h2 {
+    font-size: 2.4rem !important;
+  }
+
+  .home-container-right > p,
+  .about-right-container .about-box > p {
+    font-size: 22px !important;
+    letter-spacing: -1px !important;
+  }
+
+  .call-to-action-buttons {
+    margin: 0 !important;
+    justify-content: center !important;
+  }
+
+  .box-container .box > p {
+    font-size: 18px !important;
+  }
+
+  .mot-box > p {
+    letter-spacing: -0.9px !important;
+  }
+
+  .mot-box > h3 {
+    font-size: 21px !important;
+  }
+
+  .contact-left-content > h2 {
+    font-size: 24px !important;
+  }
+}

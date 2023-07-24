@@ -1,0 +1,684 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-purple: #6c4ba5;
+  --bg-blue: #00bbc9;
+  --bg-lightergrey: #cacaca;
+  --bg-greyDarker: #878787;
+  --bg-black: #202022;
+  --bg-darkBlue: #00747c;
+  --bg-color: #ffffff;
+  --text-color: #000;
+  --second-color: #a09dab;
+  --main-color: #f75023;
+  --big-font: 5rem;
+  --h2-font: 3rem;
+  --p-font: 1.3rem;
+  --clr-primary-400: 263 55% 52%;
+  --clr-secondary-400: 217 19% 35%;
+  --clr-secondary-500: 219 29% 14%;
+  --clr-neutral-100: 0 0% 100%;
+  --clr-neutral-200: 210 46% 95%;
+  --clr-neutral-300: 0 0% 81%;
+  --ff-primary: "Sans Pro", sans-serif;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fs-300: 0.6875rem;
+  --fs-400: 0.8125rem;
+  --fs-500: 1.25rem;
+}
+
+.mobile-nav {
+  z-index: 1;
+}
+
+a:target {
+  scroll-margin-top: 150px;
+}
+
+span {
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: end;
+  padding-top: 7rem;
+  margin-inline: auto;
+  background: linear-gradient(to bottom, #265df2, #e7f3fe, #4267b2) !important;
+}
+
+.gallery-container .gallery-container-content {
+  display: block;
+  flex: 0 0 100%;
+}
+
+.gallery-container .gallery-container-content .gallery-container-title {
+  --big-font: 3rem;
+  display: flex;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-style: italic;
+  font-family: "Bitter", sans-serif;
+  font-weight: var(--fw-700);
+  font-size: var(--big-font);
+  letter-spacing: 1.2px;
+  color: #121212;
+  margin-inline: auto;
+  margin-block: 1.2rem;
+}
+
+.gallery-container .gallery-container-content .forwards-container,
+.defenceman-container,
+.goalkeepers-container {
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.gallery-container .gallery-container-content .goalkeepers-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.gallery-container .gallery-container-content .iteam-card {
+  margin: 0.5rem 20px;
+}
+
+.gallery-container .gallery-container-content .iteam-card > img {
+  height: 350px;
+  width: auto;
+  margin-inline: auto;
+  object-fit: cover;
+  filter: brightness(auto) !important ;
+}
+
+.container-card {
+  width: 300px;
+  height: 325px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+}
+
+.container-card .card__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1s ease-in-out;
+}
+
+.card-content {
+  cursor: auto;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  color: #121212;
+  left: 0;
+  bottom: -100%;
+  padding: 0.6rem;
+  -webkit-backdrop-filter: blur(100px) !important;
+  backdrop-filter: blur(100px) !important;
+  transition: 1.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.container-card:hover .card-content {
+  bottom: 0;
+  width: inherit;
+}
+
+.card-content > h2 {
+  font-family: "Bitter", serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  line-height: 1.4rem;
+  text-align: center;
+  margin-bottom: 0.6rem;
+  text-transform: none;
+}
+
+.card-content > h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  line-height: 1.4rem;
+  text-align: center;
+  margin-inline: auto;
+  text-transform: none !important;
+}
+
+.card-content > p {
+  font-family: "Source Sans Pro", serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #f7f7f4;
+  margin-top: 0.2rem;
+  line-height: 1.2rem;
+  text-align: justify;
+}
+
+.current-sponsors {
+  gap: 1rem;
+  width: auto;
+  margin: auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom,
+    #4267b2,
+    #0077b6,
+    #e7f3fe,
+    #265df2,
+    #01497c
+  );
+}
+
+.relat-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+}
+
+.relashion-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.relashion-container > h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 46.4px;
+  padding-right: 5rem;
+  color: transparent;
+  -webkit-text-stroke: 1px #121212;
+  background-position: 0 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: water 40s linear infinite;
+}
+
+.relashion-container > img {
+  height: 120px;
+  width: auto;
+  transition: transform 0.4s ease-in-out;
+}
+
+.relashion-container > img:hover {
+  transform: scale(1.2);
+  transition: transform 0.4s ease-in-out;
+}
+
+.relashion-container .euro-games {
+  height: 200px;
+}
+
+.sponsor {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 4rem 40px;
+  color: #a9d6e5;
+  justify-content: center;
+  background-color: #01497c;
+}
+
+.sponsor .sponsors-container {
+  position: relative;
+  inset: 0;
+  width: auto;
+  margin-inline: auto;
+  z-index: 100;
+  letter-spacing: 1.4px;
+}
+
+.sponsor .sponsors-container > h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 800;
+  font-size: 52.4px;
+  line-height: 3.5rem;
+}
+
+.sponsor .sponsors-container > h2 {
+  font-family: "Source Sans Pro", serif;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 2.4rem;
+}
+
+.sponsor .sponsors-container > h4 {
+  font-family: "Source Sans Pro", serif;
+  font-weight: 900;
+  font-size: 26px;
+  letter-spacing: 2px;
+  margin-top: 1rem;
+}
+
+.sponsor .sponsors-container > h4 > a {
+  color: #202020;
+  text-decoration: none;
+  line-height: 2rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.sponsor .sponsors-container > h4 > a:hover {
+  color: #cc2366;
+  transition: all 0.4s ease-in-out;
+  border-bottom: 1px solid currentColor;
+}
+
+.sponsor .sponsor-logo {
+  right: 5%;
+  z-index: -99;
+  height: 220px;
+  position: absolute;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.train-arena {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-ice-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  padding: 5px;
+  border: 2px solid black;
+}
+
+.arena-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.tk-blob.third {
+  position: absolute;
+  left: -130px;
+  top: 20px;
+  width: 490px;
+  fill: #4267b2;
+}
+
+.left-content {
+  margin-right: 50px;
+}
+
+.left-content-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 15px 0;
+}
+
+.adjust-context {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.left-content > h3 {
+  font-family: "Bitter", serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.left-content > p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 10px 0;
+  text-align: start;
+}
+
+.left-content .left-content-container > img {
+  height: 300px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px 0px rgb(0 0 0/20%);
+}
+
+.right-content > img {
+  width: 320px;
+  border-radius: 10px;
+}
+
+.right-content > h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.footer {
+  position: relative;
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  padding: 70px 0;
+}
+
+.footer > img {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  width: 0px;
+  height: 0px;
+}
+
+.footer-widget {
+  max-width: 1270px;
+  margin-inline: auto;
+}
+
+.fot-col {
+  padding: 0 4%;
+}
+
+.fot-col .short-links {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.fot-col > h4 {
+  font-family: "Biiter", serif;
+  font-weight: 500;
+  font-size: 24px;
+  width: 120px;
+  color: #f7f4fb;
+  position: relative;
+  margin-bottom: 1rem;
+  transition: all 0.5s ease;
+}
+
+.fot-col > h4::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(105deg, #265df2, #e91e6e);
+}
+
+.fot-col > h4:hover {
+  color: #e91e6e;
+}
+
+.fot-col > p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #8a8c8e;
+  text-align: left;
+  width: max(440px);
+  line-height: 26px;
+  word-spacing: 0.4px;
+}
+
+.fot-col .short-links > ul,
+.fot-col .short-links > ol {
+  display: flex;
+  flex-direction: column;
+}
+
+.fot-col .short-links > ul > li,
+.fot-col .short-links > ol > li {
+  margin: 0.5rem 0;
+  position: relative;
+  list-style-type: none;
+}
+
+.fot-col .short-links > ul > li > a,
+.fot-col .short-links > ol > li > a {
+  color: #bbbbbb;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.fot-col > ul > li > a:hover,
+.fot-col > ol > li > a:hover {
+  color: var(--main-color);
+}
+
+.fot-col .contact-aside > p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #bbbbbb;
+  transition: all 0.3s ease;
+}
+
+.fot-col .contact-aside > p > a {
+  text-decoration: none;
+  color: #bbbbbb;
+  transition: all 0.2s ease-in-out;
+}
+
+.fot-col .contact-aside > p > a:hover {
+  color: #e91e6e;
+  transition: all 0.2s ease-in-out;
+}
+
+.fot-col .social-aside-icons {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.fot-col .social-aside-icons a > img {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 5px;
+  height: 40px;
+  margin: 20px 0 0 5px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.fot-col .social-aside-icons a > img:hover {
+  box-shadow: inset;
+  transform: scale(1.2);
+  transition: transform 500ms;
+  background-color: #f7f4fb;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  padding: 5rem 0 2rem;
+  margin-inline: auto;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.copyright > p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #8a8c8e;
+  text-align: center;
+}
+
+.copyright > p > strong {
+  font-family: "Source Sans Pro", sans-serif;
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  color: #f7f7f7;
+}
+
+.copyright > p > strong:hover {
+  color: var(--main-color);
+}
+
+.side-socials {
+  margin-left: -110px;
+}
+
+@media screen and (min-width: 501px) and (max-width: 600px) {
+  .footer-container {
+    padding-block: 0rem;
+  }
+
+  .fot-col > p {
+    width: auto;
+    text-align: center;
+  }
+
+  .fot-col .social-aside-icons {
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 500px) {
+  .gallery-container .gallery-container-content .gallery-container-title {
+    --big-font: 2rem;
+    margin-block: 0.5rem;
+  }
+
+  .sponsor .sponsor-logo {
+    top: 5%;
+    right: 0;
+    height: 150px;
+  }
+
+  .sponsor .sponsors-container > h1 {
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+  }
+
+  .sponsor .sponsors-container > h2 {
+    font-size: 1.4rem;
+  }
+
+  .sponsor .sponsors-container > h4 {
+    font-size: 1.2rem;
+    margin-top: 0.4rem;
+  }
+  .footer-container {
+    padding-block: 0rem;
+  }
+
+  .fot-col > p {
+    width: auto;
+    text-align: center;
+  }
+
+  .fot-col .social-aside-icons {
+    justify-content: center;
+    margin-block: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 400px) {
+  .gallery-container .gallery-container-content .gallery-container-title {
+    --big-font: 1.8rem;
+    margin-block: 0.5rem;
+  }
+
+  .gallery-container .gallery-container-content .iteam-card {
+    margin: 0;
+  }
+
+  .gallery-container .gallery-container-content .iteam-card > img {
+    width: 250px;
+    height: 270px;
+  }
+
+  .container-card {
+    width: 250px;
+    height: 300px;
+    line-height: 1rem;
+  }
+
+  .card-content > h2 {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+  }
+
+  .card-content > h3 {
+    font-size: 1.1rem;
+  }
+
+  .footer-container {
+    padding-block: 0rem;
+  }
+
+  .fot-col > p {
+    width: auto;
+    text-align: center;
+  }
+
+  .fot-col .social-aside-icons {
+    justify-content: center;
+    margin-block: 0.3rem;
+  }
+
+  .sponsor .sponsors-container > h1 {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+
+  .sponsor .sponsors-container > h2 {
+    font-size: 1.4rem;
+  }
+
+  .sponsor .sponsors-container > h4 {
+    font-size: 1.2rem;
+    margin-top: 0.4rem;
+  }
+}

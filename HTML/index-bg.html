@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="image/ico" href="/logo.png">
+    <title>Hockey Club Varna - HCVarna.com</title>
+    <meta name="author" content="HC-Varna">
+    <meta name="keywords" content="дисциплина, приятелство, отбор, израстване, общност, учене, качество, мотивация">
+    <meta name="description" content="Мисията на нашия клуб е да допринесе важни житейски умения на децата,
+             като: дисциплина, работа в екип и подготовка на играчите за успех на и извън леда.">
+    <link rel="stylesheet" href="/CSS/website.css">
+    <link rel="stylesheet" href="/CSS/indes-rus.css">
+    <link rel="stylesheet" href="/CSS/blobz.min.css">
+    <link rel="stylesheet" href="/CSS/media-query.css">
+    <link rel="stylesheet" href="/CSS/side-socials.css">
+    <link rel="stylesheet" href="/CSS/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="/JS/btnScrollUp.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+</head>
+
+<body class="animate__animated animate__fadeIn">
+    <header>
+        <div class="logo">
+            <img src="/images/logo.png" alt="club-logo" aria-hidden="true">
+        </div>
+        <div class="header-nav">
+            <div class="bx bx-menu active" id="menu-icon"></div>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="ul-content active">
+                    <li><a href="#about-us" rel="noreferrer">За нас</a></li>
+                    <li><a href="#event-news" rel="noreferrer">Новини</a></li>
+                    <li><a href="#team" rel="noreferrer">Отбори</a></li>
+                    <li><a href="#coaches" rel="noreferrer">Треньори</a></li>
+                    <li><a href="#managment" rel="noreferrer">Ръководство</a></li>
+                    <li><a href="#feedback" rel="noreferrer">Контакти</a></li>
+                    <div class="dropdown">
+                        <a href="/index.html"><img src="/images/flag-great-brit.svg" alt="english-language"
+                                class="dropdown-visible"></a>
+                        <a href="#"><img src="/images/flag-bulgarian.svg" alt="bulgarian-language"
+                                class="dropdown-visible"></a>
+                        <a href="./index-rus.html"><img src="/images/flag-russian.svg" alt="russian-language"
+                                class="dropdown-visible"></a>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+
+        <button type="button" class="hamburger">
+            <div class="bar"></div>
+        </button>
+    </header>
+
+    <nav class="mobile-nav is-hidden is-active">
+        <a href="#about-us" rel="noreferrer">За нас</a>
+        <a href="#event-news" rel="noreferrer">Новини</a>
+        <a href="#team" rel="noreferrer">Отбори</a>
+        <a href="#coaches" rel="noreferrer">Треньори</a>
+        <a href="#managment" rel="noreferrer">Ръководство</a>
+        <a href="#feedback" rel="noreferrer">Контакти</a>
+        <div class="dropdown mobile">
+            <a href="../index.html"><img src="/images/flag-great-brit.svg" alt="flag-gb" class="dropdown-visible"></a>
+            <a href="#"><img src="/images/flag-bulgarian.svg" alt="flag-bulgaria" class="dropdown-visible"></a>
+            <a href="./index-rus.html"><img src="/images/flag-russian.svg" alt="flag-russia"
+                    class="dropdown-visible"></a>
+        </div>
+    </nav>
+
+    <div class="fixed-scroll" onclick="topFunction()" id="scrollUp">
+        <button type="button" class="scroll-btn">
+            <img src="/images/arrow-up-svgrepo-com.svg" alt="arrow-up">
+        </button>
+    </div>
+
+    <div class="fixed-btn">
+        <button type="button" class="button open-button">Пишете ни</button>
+        <dialog class="modal" id="modal">
+            <div class="modal-content">
+                <div class="message-dialog">
+                    <div class="tk-blob form-blob">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 274 303.2">
+                            <path
+                                d="M260.2 41.4c20 29.2 14.6 74.5 7.2 124.4-7.3 49.9-16.6 104.5-49.2 126-32.5 21.6-88.4 10.2-132-15.2s-75-64.7-83.6-107.8C-6.1 125.7 8 79 36.3 47.8 64.5 16.7 107 1.3 150.9.1c43.9-1.1 89.3 12 109.3 41.3z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h1>Задайте своите въпроси</h1>
+                    <h4>Попълнете формата и до 24ч ще се свържим с Вас.</h4>
+                    <div class="social-msg-dialog">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                            </svg>
+                            <a href="tel:+ 359 888 923 187" target="_blank" rel="noreferrer">+359 899 944 051</a>
+                        </span>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                            </svg>
+                            <a href="https://www.google.bg/maps/place/Hockey+Club+Varna/@43.2299914,27.8804861,17z/data=!3m1!4b1!4m6!3m5!1s0x40a4551039560e4b:0xfa7decee5c986ee4!8m2!3d43.2299914!4d27.8826748!16s%2Fg%2F11kb21s__r"
+                                target="_blank" rel="noreferrer">Хан Севар, 9000</a>
+                        </span>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21.75 9v.906a2.25 2.25 0 01-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 001.183 1.981l6.478 3.488m8.839 2.51l-4.66-2.51m0 0l-1.023-.55a2.25 2.25 0 00-2.134 0l-1.022.55m0 0l-4.661 2.51m16.5 1.615a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V8.844a2.25 2.25 0 011.183-1.98l7.5-4.04a2.25 2.25 0 012.134 0l7.5 4.04a2.25 2.25 0 011.183 1.98V19.5z" />
+                            </svg>
+                            <a href="mailto:hockeyclubvarna@gmail.com" target="_blank"
+                                rel="noreferrer">hockeyvarna@gmail.com</a>
+                        </span>
+                    </div>
+                    <div class="social-msg-icons">
+                        <span>
+                            <a href="https://www.instagram.com/icehockeyclubvarna/" target="_blank" rel="noreferrer">
+                                <img src="/images/icon-instagram.png" alt="instagram-link">
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://www.facebook.com/profile.php?id=100076521302765" target="_blank"
+                                rel="noreferrer">
+                                <img src="/images/icon-facebook.png" alt="facebook-link">
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="modal-container">
+                    <form id="contact-form">
+                        <label for="text">Име</label>
+                        <input type="text" id="name" name="name" placeholder="Въведете име" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Въведете валиден майл" required>
+                        <label for="message">Съобщение</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Задайте въпрос" required></textarea>
+                        <div class="form-buttons">
+                            <button type="button" class="button-close close-button">Затвори</button>
+                            <button type="button" type="submit" class="button-submit">Изпрати</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </dialog>
+    </div>
+
+    <aside class="side-socials">
+        <span><a href="https://www.google.bg/maps/place/Hockey+Club+Varna/@43.2299914,27.8804861,17z/data=!3m1!4b1!4m6!3m5!1s0x40a4551039560e4b:0xfa7decee5c986ee4!8m2!3d43.2299914!4d27.8826748!16s%2Fg%2F11kb21s__r"
+                target="_blank" rel="noreferrer">Карта</a>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+            </svg>
+        </span>
+        <span><a href="mailto:hockeyclubvarna@gmail.com" target="_blank" rel="noreferrer">Email</a>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M21.75 9v.906a2.25 2.25 0 01-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 001.183 1.981l6.478 3.488m8.839 2.51l-4.66-2.51m0 0l-1.023-.55a2.25 2.25 0 00-2.134 0l-1.022.55m0 0l-4.661 2.51m16.5 1.615a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V8.844a2.25 2.25 0 011.183-1.98l7.5-4.04a2.25 2.25 0 012.134 0l7.5 4.04a2.25 2.25 0 011.183 1.98V19.5z" />
+            </svg>
+        </span>
+        <span><a href="tel:+ 359 888 923 187" target="_blank" rel="noreferrer">Телефон</a>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+            </svg>
+        </span>
+        <span>
+            <a href="https://www.facebook.com/profile.php?id=100076521302765" target="_blank"
+                rel="noreferrer">Facebook</a> <img src="/images/facebook-svg.svg" alt="facebook-link">
+        </span>
+        <span>
+            <a href="https://www.instagram.com/icehockeyclubvarna/" target="_blank" rel="noreferrer">Instagram</a>
+            <img src="/images/instagram-svg.svg" alt="instagram-link">
+        </span>
+    </aside>
+
+    <main>
+        <section id="hero-section">
+            <div id="hero">
+                <div class="slider">
+                    <img src="/images/arrow-left.png" id="prev" alt="arrow-left" data-aos="fade-right"
+                        data-aos-duration="1000">
+                    <div class="preview" data-aos="zoom-in" data-aos-duration="850">
+                        <img src="/images/min-bg1.jpg" alt="min-bg1" class="active thumbnail">
+                        <img src="/images/min-bg2.jpeg" alt="min-bg2" class="thumbnail">
+                        <img src="/images/min-bg3.jpg" alt="min-bg3" class="thumbnail">
+                        <img src="/images/min-bg4.jpeg" alt="min-bg4" class="thumbnail">
+                        <img src="/images/min-bg5.jpg" alt="min-bg5" class="thumbnail">
+                    </div>
+                    <img src="/images/arrow-right.png" id="next" alt="arrow-right" data-aos="fade-left"
+                        data-aos-duration="1000">
+                    <div class="arrow-slide"></div>
+                </div>
+            </div>
+        </section>
+        <section id="home">
+            <article class="home-container">
+                <div class="home-container-left">
+                    <div class="img-group">
+                        <img src="/images/hero-min.png" aria-hidden="true" class="img-player" alt="home-player"
+                            data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                            data-aos-duration="1200">
+                    </div>
+                </div>
+                <div class="home-container-right">
+                    <img src="/images/logo.png" data-aos="fade-up-left" data-aos-duration="850" alt="club-logo">
+                    <h2 data-aos="fade-up-left" data-aos-duration="1000">Хокеен клуб <strong>Варна</strong></h2>
+                    <p data-aos="fade-up-left" data-aos-duration="1200">
+                        Успехът на нашия хокеен клуб, не се измерва само в шампионски титли, но и в личностното
+                        израстване и развитие на неговите играчи, чрез нашите тренировъчни програми, клубът придава
+                        важни житейски умения, като дисциплина, издръжливост, екипност и комуникативност с цел
+                        подготвяйки играчите за успех на леда и извън леда.</p>
+                    <div class="call-to-action-buttons">
+                        <a href="#team" rel="noreferrer" class="test second" data-aos="fade-up-right"
+                            data-aos-duration="900" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                            <button type="button" class="read-more second">Отбор деца</button>
+                            <button type="button" class="read-more second">Отбор мъже</button>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="about-us">
+            <article class="content">
+                <div class="about-section">
+                    <div class="about-container">
+                        <div class="about-right-container">
+                            <div class="blobzSection about-blobz" data-aos="fade-left" data-aos-duration="2300">
+                                <div class="tk-blob activeD">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 747.2 726.7">
+                                        <path
+                                            d="M539.8 137.6c98.3 69 183.5 124 203 198.4 19.3 74.4-27.1 168.2-93.8 245-66.8 76.8-153.8 136.6-254.2 144.9-100.6 8.2-214.7-35.1-292.7-122.5S-18.1 384.1 7.4 259.8C33 135.6 126.3 19 228.5 2.2c102.1-16.8 213.2 66.3 311.3 135.4z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="about-box" data-aos="fade-right" data-aos-offset="300"
+                                data-aos-easing="ease-in-sine" data-aos-duration="800">
+                                <h2 data-aos="fade-up-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                                    data-aos-duration="800" style="text-transform: none;">За нас</h2>
+                                <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                                    data-aos-duration="1000">
+                                    &nbsp;&nbsp;В хокеен клуб "Варна", нашето мото е да въздействаме положително, над
+                                    хората и общоността. Нашата мисия е да развиваме смели спортисти и да изградим
+                                    здрава подкрепяща се общност, чрез силата на хокея.
+                                    <br>
+                                    &nbsp;&nbsp;Клубът предлага качествени хокейни програми за играчи от всички
+                                    възрастови групи, спрямо техните умения в продължителност на години.
+                                    Нашият опитен треньорски екип и подкрепящата общност от играчи и семейства създадоха
+                                    приветлива и приобщаваща среда, в която всеки може да се учи и съмоусъвършенства.
+                                </p>
+                            </div>
+                            <span class="main-btns-container">
+                                <div class="call-to-action-buttons">
+                                    <a href="#feedback" rel="noreferrer" class="test second" data-aos="fade-up-right"
+                                        data-aos-duration="900" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                                        <button type="button" class="read-more second"
+                                            style="text-transform: none;">Контакти</button>
+                                        <button type="button" class="read-more second"
+                                            style="text-transform: none;">Контакти</button>
+                                    </a>
+                                </div>
+                                <div class="call-to-action-sec-button">
+                                    <a href="#team" rel="noreferrer" class="test second" data-aos="fade-up-right"
+                                        data-aos-duration="900" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                                        <button type="button" class="read-more second">Отбор деца</button>
+                                        <button type="button" class="read-more second">Отбор мъже</button>
+                                    </a>
+                                </div>
+                            </span>
+                        </div>
+                        <article class="swiper about-left-container" data-aos="fade-up-left" data-aos-duration="1000">
+                            <div class="swiper-wrapper" effect="fade">
+                                <div class="swiper-slide">
+                                    <img src="/images/about-swiper.jpg" alt="about-swiper1" aria-hidden="true">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/images/about-swiper2.jpg" alt="about-swiper2" aria-hidden="true">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/images/about-swiper3.JPG" alt="about-swiper3" aria-hidden="true">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/images/about-swiper4.jpg" alt="about-swiper4" aria-hidden="true">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/images/about-swiper5.jpg" alt="about-swiper5" aria-hidden="true">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/images/about-swiper7.jpg" alt="about-swiper6" aria-hidden="true">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="box-container" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="box" id="box-one">
+                        <img src="/images/box2.jpg" alt="box" aria-hidden="true">
+                        <p> Преди коледните празници <br> ние се забавляваме на <br> морското пристанище във Варна </p>
+                    </div>
+                    <div class="box" id="box-two">
+                        <img src="/images/box1.jpg" alt="box2" aria-hidden="true">
+                        <p>Най-ценното нещо е <br />да виждаме децата <br /> как се забавляват </p>
+                    </div>
+                    <div class="box" id="box-three">
+                        <img src="/images/box3.jpg" alt="box3" aria-hidden="true">
+                        <p>По време на игра, <br />трябва да бъдем <br /> фокусирани на 100% </p>
+                    </div>
+                </div>
+                <section class="motivation-boxes" id="motivation-boxes">
+                    <article class="motivation-bg" data-aos="zoom-in" data-aos-duration="1000">
+                        <aside class="motivation-container-overflow">
+                            <article class="article-container">
+                                <div class="article-box">
+                                    <div class="mot-box one-box">
+                                        <img src="/images/num-one.svg" alt="num-one">
+                                        <h3>Мотивация</h3>
+                                        <p>
+                                            От самото начало ще почувствате дружелюбна атмосфера в клуба, чрез която ще
+                                            насърчи вашите деца да участват редовно и целеустременно в тренировъчния
+                                            процес. Всички треньори в клуба, знаят как да мотивират децата да участва в
+                                            процеса, както и дадат на вашето дете необходимата увереност в първите му
+                                            стъпки на леда.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="article-container">
+                                <div class="article-box">
+                                    <div class="mot-box sec-box">
+                                        <img src="/images/num-two.svg" alt="num-two">
+                                        <h3>Пързаляне</h3>
+                                        <p>
+                                            Най-важното умение е пързалянето, без него не би било възможно да се отключи
+                                            пълният потенциал, който да позволява на хокеиста да е съсредоточен върху
+                                            играта и тренировъчния процес. <br /> Ние ще се погрижим да научим вашето
+                                            дете, как да се пързаля по правилният начин.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="article-container">
+                                <div class="article-box">
+                                    <div class="mot-box third-box">
+                                        <img src="/images/num-three.svg" alt="num-three">
+                                        <h3>Упражнения</h3>
+                                        <p>
+                                            По време на упражненията ще ви покажем как правилно да поддържате контрола
+                                            над шайбата. Как да използвате пространството на леда, как да
+                                            взаимодействате със съотборниците си и много други фундаментални особености.
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </aside>
+                    </article>
+                </section>
+            </article>
+        </section>
+        <section class="upcoming-events" id="event-news">
+            <div class="upcoming-event-gallery" data-aos="fade-right" data-aos-duration="650">
+                <img src="/images/event-bg.jpg" alt="event-bg">
+            </div>
+            <div class="upcoming-event-text">
+                <h2 data-aos="fade-down-left" data-aos-duration="1000">Предстоящи събития</h2>
+                <div class="tabs" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <div class="tab-buttons">
+                        <button type="button" class="tab-button active" data-tab="tab-2"> Май 19 - 21</button>
+                        <button type="button" class="tab-button" data-tab="tab-3">Септември 15 - 17</button>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-item active" id="tab-2">
+                            <h1 style="text-transform: none;">Турнир за мъже</h1>
+                            <p>
+                                През май месец от 19 до 21-ри / 2023 мъжкият отбор по хокей на лед Варна, ще
+                                участва в международно състезание "Golden Black Sea Cup" - 2023, което ще се проведе на
+                                територия на Кранево в ледената пързалка "Black Sea Ice Arena",
+                                където нашите момчета ще защитават миналогодишната си титла.
+                                <br />Сайт на турнира: <a href="https://goldenblackseacup.com/" target="_blank"
+                                    rel="noreferrer">goldenblackseacup.com</a>
+                            </p>
+                        </div>
+                        <div class="tab-item" id="tab-3">
+                            <h1 style="text-transform: none;">Турнир за мъже</h1>
+                            <p>През септември от 15 до 17-ти / 2023, мъжкият отбор по хокей на лед Варна, отново ще
+                                заеме участие в международно състезание "Golden Black Sea Cup" - 2023,
+                                което ще се проведе на територия на Кранево в ледената пързалка "Black Sea Ice Arena".
+                                <br />Сайт на турнира: <a href="https://goldenblackseacup.com/" taget="_blank"
+                                    rel="noreferrer">goldenblackseacup.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="/JS/tabItems.js"></script>
+        </section>
+        <section class="team-colors">
+            <h2 data-aos="fade-up" data-aos-duration="850">Клубни цветове <br /> отборни фланели</h2>
+            <div class="team-container">
+                <div class="team-box" data-aos="fade-right" data-aos-duration="900">
+                    <img src="/images/jersey-allwear.png" alt="everyday-jerseys">
+                    <h3>Спортен екип</h3>
+                </div>
+                <div class="team-box" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="/images/jersey-main.png" alt="main-jersey">
+                    <h3>Игрова фланела</h3>
+                </div>
+                <div class="team-box" data-aos="fade-left" data-aos-duration="950">
+                    <img src="/images/jersey-train.png" alt="training-jersey">
+                    <h3>Тренировъчна фланела</h3>
+                </div>
+            </div>
+        </section>
+        <section class="news" id="team">
+            <div class="news-title" data-aos="zoom-in" data-aos-duration="650">
+                <h2>Отбори</h2>
+            </div>
+            <article class="mens-container">
+                <img data-aos="fade-left" data-aos-duration="750" src="/images/men-content-min.jpg" alt="men-content"
+                    class="mens_image">
+                <div class="tk-blob">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 274 303.2">
+                        <path
+                            d="M260.2 41.4c20 29.2 14.6 74.5 7.2 124.4-7.3 49.9-16.6 104.5-49.2 126-32.5 21.6-88.4 10.2-132-15.2s-75-64.7-83.6-107.8C-6.1 125.7 8 79 36.3 47.8 64.5 16.7 107 1.3 150.9.1c43.9-1.1 89.3 12 109.3 41.3z">
+                        </path>
+                    </svg>
+                </div>
+                <aside class="mens-container-context" data-aos="fade-right" data-aos-duration="750">
+                    <h1>Мъжки отбор</h1>
+                    <p>
+                        &nbsp;Мъжкият отбор на нашия клуб има редовни тренировки по хокей на лед, ежегодно участваме в
+                        Българското национално първенство по хокей (БАХЛ), и сме шампион на БАХЛ през изминалия сезон
+                        2022 / 2023. Вземаме участие и на международно ниво в различни турнири по хокей, като на
+                        последния през 2022 г. "Golden Black Sea Cup", станахме шампиони от общо 7 чуждестранни клуба.
+                        Разполагаме и със състезатели, които редовно вземат участие на национално ниво.
+                    </p>
+                    <div class="call-to-action-buttons">
+                        <a href="/HTML/men's-bg.html" target="_parent" rel="noreferrer" class="test second"
+                            data-aos="fade-up-right" data-aos-duration="1500" data-aos-offset="100"
+                            data-aos-easing="ease-in-sine">
+                            <button type="button" class="read-more second">Отбор мъже</button>
+                            <button type="button" class="read-more second">Отбор мъже</button>
+                        </a>
+                    </div>
+                </aside>
+                <div class="custom-shape-divider-bottom-1677681419">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                        preserveAspectRatio="none">
+                        <path
+                            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                            class="shape-fill"></path>
+                    </svg>
+                </div>
+            </article>
+            <article class="childrens-container">
+                <div class="tk-blob">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 371.5 297.7">
+                        <path
+                            d="M286.9 54.2c42.7 34.9 89.4 85.3 84.2 130.4-5.2 45.1-62.1 84.7-118 102.3S142.3 300 94.8 278C47.2 256 6.9 216.6.8 173.9S22.7 85.2 56 52.4C89.4 19.6 127.9.1 166.6 0s77.6 19.2 120.3 54.2z">
+                        </path>
+                    </svg>
+                </div>
+                <img src="/images/childrens-content.JPG" alt="childrens-content" class="children_image"
+                    data-aos="fade-right" data-aos-duration="850">
+                <aside class="childrens-container-context" data-aos="fade-left" data-aos-duration="850">
+                    <h1>Детски отбор</h1>
+                    <p>&nbsp;
+                        За първи път в историята на клуба, на 11-ти и 12-ти Март - 2023 г.,
+                        детския отбор по хокей на лед Варна, изигра два изключително трудни и невероятни мачове в София.
+                        Опоненти ни бяха от хокеен клуб НСА (София), където мача завърши с 8:12 и срещу хокеен клуб
+                        Левски (София), с резултат 9:6, в полза на нашият отбор.
+                        През двата мача, всеки един от играчите показа спортсменство и желание за победа!
+                        Това е огромна стъпка в израстването и развитието на нашите деца.
+                        Постоянните и упорити тренировки накрая винаги дават добър резултат. Ще продължим да тренираме и
+                        да си поставяме нови цели.
+                    </p>
+                    <div class="call-to-action-buttons">
+                        <a href="/HTML/children's-bg.html" target="_parent" rel="noreferrer" class="test second"
+                            data-aos="fade-up-right" data-aos-duration="1500" data-aos-offset="100"
+                            data-aos-easing="ease-in-sine">
+                            <button type="button" class="read-more second">Отбор деца</button>
+                            <button type="button" class="read-more second">Отбор деца</button>
+                        </a>
+                    </div>
+                </aside>
+                <div class="custom-shape-divider-bottom-1677787625">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                        preserveAspectRatio="none">
+                        <path
+                            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                            class="shape-fill"></path>
+                    </svg>
+                </div>
+            </article>
+        </section>
+        <section class="coaches" id="coaches">
+            <div class="team-title" data-aos="fade-up" data-aos-duration="850">
+                <h2>Нашите треньори</h2>
+            </div>
+            <div class="main-container" data-aos="zoom-in-up" data-aos-duration="1000">
+                <section class="container-box">
+                    <article class="container-card">
+                        <img src="/images/coach-anton.jpg" alt="coach-anton" class="card__img" aria-hidden="true">
+                        <div class="card-content">
+                            <h2>Антон Готилов</h2>
+                            <h3 class="specific-content">Главен треньор</h3>
+                        </div>
+                    </article>
+                </section>
+                <section class="container-box">
+                    <article class="container-card">
+                        <img src="/images/coach-ernest.jpg" alt="coach-ernest" class="card__img" aria-hidden="true">
+                        <div class="card-content">
+                            <h2>Ернест Василиев</h2>
+                            <h3>Треньор</h3>
+                        </div>
+                    </article>
+                </section>
+                <section class="container-box">
+                    <div class="container-card">
+                        <img src="/images/coach-ivan.jpg" alt="coach-ivan" class="card__img" aria-hidden="true">
+                        <div class="card-content">
+                            <h2>Иван Саръбеев</h2>
+                            <h3>Треньор</h3>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="team-title">
+                <h2 class="sub-team-title">Ръководство</h2>
+            </div>
+            <div class="main-container" id="managment">
+                <section class="container-box">
+                    <article class="container-card">
+                        <img src="/images/anton-official.png" alt="coach-anton" class="card__img" aria-hidden="true">
+                        <div class="card-content">
+                            <h2>Антон Готилов</h2>
+                            <h3>Организатор</h3>
+                        </div>
+                    </article>
+                </section>
+                <section class="container-box">
+                    <div class="container-card">
+                        <img src="/images/coach-dmitri.jpg" alt="manager-dmitri" class="card__img" aria-hidden="true">
+                        <div class="card-content">
+                            <h2>Дмитрий Нетронин</h2>
+                            <h3>Мениджър</h3>
+                        </div>
+                    </div>
+                </section>
+                <section class="container-box">
+                    <article class="container-card">
+                        <img src="/images/coach-kiril.jpg" alt="owner-kiril" class="card__img" aria-hidden="true">
+                        <div class="card-content">
+                            <h2>Кирил Кутлев</h2>
+                            <h3>Председател</h3>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </section>
+        <section class="current-sponsors">
+            <h1>Партньори</h1>
+            <div class="relashion-container">
+                <a href="https://touristtrain.bg/" target="_blank" rel="noreferrer">
+                    <img src="/images/neutral-logos/euro-games.png" alt="euro-games" class="euro-games"
+                        aria-hidden="true">
+                </a>
+                <img src="/images/neutral-logos/varna.png" alt="varna-municipality" aria-hidden="true">
+                <a href="https://goldenblackseacup.com/" target="_blank" rel="noreferrer">
+                    <img src="/images/neutral-logos/blackSeaCup.png" alt="black-sea-cup" aria-hidden="true">
+                </a>
+            </div>
+        </section>
+        <section class="sponsor" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="sponsors-container">
+                <h1 data-aos="fade-right" data-aos-duration="2000">Искате ли да станете</h1>
+                <h2 data-aos="fade-right" data-aos-duration="2000"><strong>спонсор</strong> & <b>съдружник</b></h2>
+                <h4 data-aos="fade-right" data-aos-duration="1750">Email: <a data-aos="fade-up-right"
+                        data-aos-duration="800" href="mailto:hockeyclubvarna@gmail.com" target="_blank"
+                        rel="noopener noreferrer"> hockeyclubvarna@gmail.com</a></h4>
+                <h4 data-aos="fade-right" data-aos-duration="1750">Телефон: <a data-aos="fade-up-right"
+                        data-aos-duration="800" href="tel:+359 899 944 051"> +359 899 944 051</a></h4>
+            </div>
+            <img class="sponsor-logo" data-aos="fade-left" data-aos-duration="800" src="/images/logo.png"
+                aria-hidden="true" alt="club-logo">
+        </section>
+        <section class="contact" id="feedback">
+            <div class="contact-container">
+                <div class="contact-left-content">
+                    <h2>Местоположение <strong>&</strong> Контакти</h2>
+                    <div class="contact-info">
+                        <span>
+                            <a
+                                href="https://www.google.bg/maps/dir/43.222126,27.8183988/hockey+club+varna/@43.2284511,27.8154255,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x40a4551039560e4b:0xfa7decee5c986ee4!2m2!1d27.8826748!2d43.2299914">
+                                Хан Севар, Варна, България 9000</a>
+                            <svg width="20px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                            </svg>
+                        </span>
+                        <span>
+                            <a href="mailto:hockeyclubvarna@gmail.com">hockeyclubvarna@gmail.com</a>
+                            <svg width="20px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21.75 9v.906a2.25 2.25 0 01-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 001.183 1.981l6.478 3.488m8.839 2.51l-4.66-2.51m0 0l-1.023-.55a2.25 2.25 0 00-2.134 0l-1.022.55m0 0l-4.661 2.51m16.5 1.615a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V8.844a2.25 2.25 0 011.183-1.98l7.5-4.04a2.25 2.25 0 012.134 0l7.5 4.04a2.25 2.25 0 011.183 1.98V19.5z" />
+                            </svg>
+                        </span>
+                        <span>
+                            <a href="tel:+359 899 944 051 ">+359 899 944 051</a>
+                            <svg width="20px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-right-content">
+                    <datagrid>
+                        <iframe class="google-map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.005540912823!2d27.88013981532704!3d43.230343479138114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a4549379d25231%3A0x4f3764637eb7e59c!2zSWNlIFJpbmsg4oCeTWxhZG9zdOKAnA!5e0!3m2!1sen!2sbg!4v1674249356219!5m2!1sen!2sbg"
+                            width="750" height="470" allowfullscreen="true" allowfullscreen="true"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </datagrid>
+                </div>
+            </div>
+        </section>
+        <section class="portrait">
+            <div class="swiper swiper-gallery portrait-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/images/main-swiper.jpg" alt="main-swiper" aria-hidden="true">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/images/main-swiper2.jpg" alt="main-swiper2" aria-hidden="true">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/images/main-swiper3.jpg" alt="main-swiper3" aria-hidden="true">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/images/main-swiper4.jpg" alt="main-swiper4" aria-hidden="true">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/images/main-swiper5.jpg" alt="main-swiper5" aria-hidden="true">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/images/main-swiper6.jpg" alt="main-swiper6" aria-hidden="true">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/images/main-swiper7.jpg" alt="main-swiper7" aria-hidden="true">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/images/main-swiper8.jpg" alt=main-swiper8" aria-hidden="true">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer-widget">
+            <article class="footer-container">
+                <div class="fot-col">
+                    <h4 class="fot-first">Информация</h4>
+                    <p> &nbsp; Каним ви да се присъедините към нашите тренировки по хокей на лед и
+                        да станете част от нашия отбор. Ние непрекъснато набираме нови играчи от всички възрасти.
+                    </p>
+                </div>
+                <div class="fot-col">
+                    <h4 class="fot-col-title">Бързи връзки</h4>
+                    <div class="short-links">
+                        <ul>
+                            <li><a href="#about-us">За нас</a></li>
+                            <li><a href="#event-news">Новини</a></li>
+                            <li><a href="#team">Отбори</a></li>
+                        </ul>
+                        <ol>
+                            <li><a href="#coaches">Треньори</a></li>
+                            <li><a href="#managment">Ръководство</a></li>
+                            <li><a href="#feedback">Контакти</a></li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="fot-col">
+                    <h4>Контакти</h4>
+                    <span class="contact-aside">
+                        <p>Тел:<a href="tel:++359 888 923 187" rel="noreferrer"> +359 899 944 051</a></p>
+                        <p>Адрес: Хан Севар, Варна 9000</p>
+                        <p>Email:<a href="mailto:hockeyclubvarna@gmail.com" rel="noreferrer">
+                            </a> hockeyclubvarna@gmail.com</a>
+                        </p>
+                    </span>
+                    <span class="social-aside-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100076521302765" target="_blank"
+                            rel="noreferrer"> <img src="/images/icon-facebook.png" alt="facebook"></a>
+                        <a href="https://www.instagram.com/icehockeyclubvarna/" target="_blank" rel="noreferrer">
+                            <img src="/images/icon-instagram.png" alt="instagram"></a>
+                    </span>
+                </div>
+            </article>
+            <div class="copyright">
+                <p>Всички права са запазени от &copy;<strong> Клуб по хокей на лед Варна</strong> - 2023.</p>
+            </div>
+        </section>
+    </footer>
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script type="text/javascript">window.onload = function () {
+            Calendly.initBadgeWidget({
+                url: 'https://calendly.com/hockeyclubvarna/training-session',
+                text: 'График', color: '#0069ff', textColor: '#ffffff'
+            });
+        }</script>
+    <script>AOS.init();</script>
+    <script src="/JS/modal-min.js"></script>
+    <script src="/JS/navbar-min.js"></script>
+    <script src="/JS/swiper-min.js"></script>
+    <script src="/JS/btnScrollUp.js"></script>
+    <script src="/JS/slider-international.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</body>
+
+
+</html>
